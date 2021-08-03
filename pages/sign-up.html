@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <title>Create an Account</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-signup">
+            <div class="modal-close">
+                X
+            </div>
+            <div class="modal-signup-heading">
+                <p class="modal-signup-name">Sign Up</p>
+                <p class="modal-signup-child-name">It's quick and easy.</p>
+            </div>
+            <hr>
+            <div class="modal-signup-name">
+                <input type="text" class="name" id="firstName" placeholder="First Name">
+                <input type="text" class="name" id="surname" placeholder="Surname">
+                <error-output class="name-error" for="firstName"></error-output>
+            </div>
+            <div class="myForm">
+                <input type="email" class="mail" id="mail" placeholder="Email address">
+                <input type="text" class="phone" id="phone" placeholder="phone number">
+                <error-output class="mobile-error" for="phone"></error-output>
+                <input type="password" class="pass" id="pass" placeholder="New password">
+            </div>
+            <button type="button" class="btn" onclick="SignUp()">Sign up</button>
+        </div>
+    </div>
+    <script src="../js/sign-up.js"></script>
+    <script src="../js/sign-up-update.js"></script>
+</body>
+</html>
